@@ -59,17 +59,17 @@ coilApp.controller("CoilCtrl", function ($scope, $http, $uibModal) {
         wire: {
             category   : "Kanthal A1",
             resistivity: 1.45,
-            height     : 0.40,
-            width      : 0.40,
+            height     : 0.20,
+            width      : 0.20,
             flat       : false,
             count      : 1
         },
         coil: {
-            diameter: 3,
+            diameter: 2,
             turns   : 5,
             stubs   : 4,
             count   : 1,
-            volts   : 4.0
+            volts   : 4.2
         }
     };
 
