@@ -59,17 +59,17 @@ coilApp.controller("CoilCtrl", function ($scope, $http, $uibModal) {
         wire: {
             category   : "Kanthal A1",
             resistivity: 1.45,
-            height     : 0.20,
-            width      : 0.20,
+            height     : 0.40,
+            width      : 0.40,
             flat       : false,
             count      : 1
         },
         coil: {
-            diameter: 2,
+            diameter: 3,
             turns   : 5,
             stubs   : 4,
             count   : 1,
-            volts   : 4.2
+            volts   : 4.0
         }
     };
 
@@ -142,7 +142,7 @@ coilApp.controller("CoilCtrl", function ($scope, $http, $uibModal) {
             model.wire.height = model.wire.width;
         }
 
-        // Resistance/mm (resistivity in ohm/mm²/meter)
+        // Resistance/mm (resistivity in ohm/mmÂ²/meter)
         // http://fr.wikipedia.org/wiki/R%C3%A9sistivit%C3%A9
         // http://www.kanthal.com/en/products/materials-in-wire-and-strip-form/wire/resistance-heating-wire-and-resistance-wire/list-of-alloys/
         var resistance = (model.wire.resistivity / (section * model.wire.count)) / 1000;
